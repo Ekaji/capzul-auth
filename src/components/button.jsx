@@ -1,8 +1,7 @@
-export default function Button({ icon, backgroundColor, text, }) {
+export default function Button({ icon, backgroundColor, text, handleSubmit }) {
 
-    console.log(icon)
     return (
-        <div className={`md:w-1/2 mb-5 h-[33.87px] ${backgroundColor ?? backgroundColor }  flex justify-center items-center rounded-md`
+        <div onClick={(e) => handleSubmit(e)} className={`md:w-1/2 mb-5 h-[33.87px] ${backgroundColor ?? backgroundColor }  flex justify-center items-center rounded-md`
         }>
             <div className="flex justify-center space-x-3 ">
                 {
